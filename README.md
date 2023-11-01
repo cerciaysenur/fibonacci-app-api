@@ -23,6 +23,8 @@ Following are the features of this project:
 
 * **Continuous Integration & Deployment:** The project uses GitHub Actions for CI/CD, automating the software delivery process.
 
+* **Test Driven Development (TDD):** Since the beginning of this project, TDD has been strictly adhered to. This approach ensures that each functionality is tested before it's implemented, promoting robustness and reliability.
+
 * **Testing:** 
   - **Unit Testing:** Individual units of the project are tested to ensure they work as expected.
   - **Integration Testing:** Different units are combined and tested as a group to ensure they work together seamlessly.
@@ -61,7 +63,7 @@ Following are the features of this project:
 
 ## API Examples
 
-### GET `/n/`
+### GET `/n`
 
 This endpoint returns a number based on the input parameter `n`.
 
@@ -77,7 +79,7 @@ curl -X 'GET' \
 
 Status code: 200 OK
 
-### GET `/n/` for values above 1000
+### GET `/n` for values above 1000
 
 If you request this endpoint with a value of 1000 or higher, the server will respond with a `400 Bad Request` status.
 
